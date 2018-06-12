@@ -1,0 +1,19 @@
+git clone https://github.com/studynine/samplejava.git
+cd samplejava
+cat README.md
+echo "test 123" > test.txt
+git add test.txt
+git commit -m "comment"
+git push
+BRANCH
+git branch newfeature
+git checkout newfeature
+git branch
+echo "new feature" > feature.txt
+git add feature.txt
+git commit -m "featurecomment"
+git push origin newfeature
+MERGE
+git checkout master
+git merge newfeature
+git push
